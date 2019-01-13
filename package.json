@@ -1,0 +1,25 @@
+{
+  "name": "shoesdatabase",
+  "version": "1.0.0",
+  "description": "My astonishing Nuxt.js project",
+  "author": "Umijinko",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "core-js": "^2.6.2",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.0.0",
+    "vue2-google-maps": "^0.10.5",
+    "vuetify": "^1.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  }
+}

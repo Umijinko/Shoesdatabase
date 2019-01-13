@@ -1,0 +1,39 @@
+[
+{"id": 1, "title": "RENDO", "photo_url": "", "photo_file_url": "./shopimages/Shop1.jpg", "lat": 35.71724, "lng": 139.80199,  "height": 400, "instagram":"https://www.instagram.com/rendoasakusa/", "facebook":"https://ja-jp.facebook.com/rendoshoes/",  "owner_url": "https://www.rendo-shoes.jp/"}
+,
+{"id": 2, "title": "Joe Works", "photo_url": "", "photo_file_url": "./shopimages/Shop2.jpg", "lat": 35.72688,  "lng": 139.80452, "height": 389, "instagram":"", "facebook":"",  "owner_url": "https://www.joeworks.net/"}
+,
+{"id": 3, "title": "KOKON", "photo_url": "", "photo_file_url": "./shopimages/Shop3.jpg", "lat": 36.55566,  "lng": 136.65605, "height": 382, "instagram":"", "facebook":"",  "owner_url": "http://kanazawakokon.com/"}
+,
+{"id": 4, "title": "Avanti", "photo_url": "", "photo_file_url": "./shopimages/Shop4.jpg", "lat": 35.17623,  "lng": 136.90717, "instagram":"", "facebook":"",  "owner_url": "http://avanti-shoes.net/"}
+,
+{"id": 5, "title": "Gloucester Road Shoes Shop", "photo_url": "", "photo_file_url": "./shopimages/Shop5.jpg", "lat": 35.43852,  "lng": 139.64498, "instagram":"", "facebook":"",  "owner_url": "http://www.gloucester-road.com/"}
+,
+{"id": 6, "title": "AZALEA", "photo_url": "", "photo_file_url": "./shopimages/Shop6.jpg", "lat": 36.68881,  "lng": 137.21154, "instagram":"", "facebook":"",  "owner_url": "http://azalea-co.com/"}
+,
+{"id": 7, "title": "CLEMATIS銀座", "photo_url": "", "photo_file_url": "./shopimages/Shop7.jpg", "lat": 35.673227,  "lng": 139.772226 , "instagram":"", "facebook":"",  "owner_url": "http://www.clematis-ginza.com/"}
+,
+{"id": 8, "title": "小笠原シューズ", "photo_url": "", "photo_file_url": "./shopimages/Shop8.jpg", "lat": 35.725483,  "lng": 139.547294, "instagram":"", "facebook":"",  "owner_url": "http://sinando.jp/"}
+,
+{"id": 9, "title": "BROSENT", "photo_url": "", "photo_file_url": "./shopimages/Shop9.jpg", "lat": 35.6318213,  "lng": 139.7056712, "instagram":"", "facebook":"",  "owner_url": "https://www.brosentshoes.com/"}
+,
+{"id": 10, "title": "オーダメイド革靴販売のパンチャ", "photo_url": "", "photo_file_url": "./shopimages/Shop10.jpg", "lat": 33.6005628,  "lng": 130.4042284, "instagram":"", "facebook":"",  "owner_url": "http://www.pancia1916.com/"}
+,
+{"id": 11, "title": "シェットランドフォックス", "photo_url": "", "photo_file_url": "./shopimages/Shop11.jpg", "lat": 35.6749739,  "lng": 139.7609626, "instagram":"", "facebook":"",  "owner_url": "https://www.shetlandfox.jp/shop/"}
+,
+{"id": 12, "title": "リーガルトーキョー", "photo_url": "", "photo_file_url": "./shopimages/Shop12.jpg", "lat": 35.6745055,  "lng": 139.7673421, "instagram":"", "facebook":"",  "owner_url": "https://www.regaltokyo.jp/"}
+,
+{"id": 13, "title": "大塚製靴", "photo_url": "", "photo_file_url": "./shopimages/Shop13.jpg", "lat": 35.662528,  "lng": 139.729951, "instagram":"", "facebook":"",  "owner_url": "https://www.regaltokyo.jp/"}
+,
+{"id": 14, "title": "ロイドフットウェア銀座", "photo_url": "", "photo_file_url": "./shopimages/Shop14.jpg", "lat": 35.6729599,  "lng": 139.7653481, "instagram":"", "facebook":"",  "owner_url": ""}
+,
+{"id": 15, "title": "荒井弘史靴研究所", "photo_url": "", "photo_file_url": "./shopimages/Shop15.jpg", "lat": 35.7142877,  "lng": 139.8001303, "instagram":"", "facebook":"",  "owner_url": "https://h-arai.com/"}
+,
+{"id": 16, "title": "靴のハシモト", "photo_url": "", "photo_file_url": "./shopimages/Shop16.jpg", "lat": 35.5428949,  "lng": 139.789972, "instagram":"", "facebook":"",  "owner_url": ""}
+,
+{"id": 17, "title": "FOOT WORKS", "photo_url": "", "photo_file_url": "./shopimages/Shop17.jpg", "lat": 35.6609402,  "lng": 139.6680122, "instagram":"", "facebook":"",  "owner_url": ""}
+,
+{"id": 18, "title": "山陽山長", "photo_url": "", "photo_file_url": "./shopimages/no_image.png", "lat": 35.6739681,  "lng": 139.7664253, "instagram":"", "facebook":"",  "owner_url": "http://www.sanyoyamacho.com/"}
+,
+{"id": 19, "title": "スコッチグレイン銀座本店", "photo_url": "", "photo_file_url": "./shopimages/no_image.png", "lat": 35.6704764,  "lng": 139.7675234, "instagram":"", "facebook":"",  "owner_url": "http://www.scotchgrain.co.jp/"}
+]
