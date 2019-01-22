@@ -13,9 +13,16 @@
       :center="{lat:35.71724, lng:139.80199}"
       :zoom="7"
       map-type-id="roadmap"
-      style="width: mapWidth; height: 500px;"
+      style="width: mapWidth; height: 400px;"
       
 >
+                <!-- <gmap-info-window
+                :options="infoOptions"
+                :position="infoPosition"
+                :opened="infoOpened"
+                :content="infoContent"
+                @closeclick="infoOpened=false">
+                </gmap-info-window> -->
   <GmapMarker
     :key="index"
     v-for="(m, index) in markers"
@@ -24,6 +31,7 @@
     :draggable="false"
     @click="center=m.position"
   />
+  
 </GmapMap>
 
 </div>
@@ -37,9 +45,7 @@ import Items from '~/assets/data.json'
 
     data() {
       return {
-
-      markers : [
-      ]
+      markers : [],
     }
     },
       created () {

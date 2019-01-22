@@ -1,8 +1,8 @@
 <template>
-  <v-app light>
+  <v-app light >
     <v-navigation-drawer
       :mini-variant="miniVariant"
-      :clipped="clipped"
+      :clipped-right="clipped"
       v-model="drawer"
       fixed
       app
@@ -26,11 +26,17 @@
     </v-navigation-drawer>
     
     <v-toolbar
-      :clipped-left="clipped"
-      fixed
+      :clipped-right="clipped"
       app
-
     >
+    <v-flex
+    text-xs4-center>
+
+    <v-toolbar-title fixed v-text="title"/>
+
+    </v-flex>
+    
+    <v-spacer></v-spacer>
       <v-toolbar-side-icon @click="drawer = !drawer" />
       <!-- <v-btn
         icon
@@ -50,7 +56,7 @@
       >
         <v-icon>remove</v-icon>
       </v-btn> -->
-      <v-toolbar-title v-text="title"/>
+      
       <!-- <v-btn
         icon
         @click.stop="rightDrawer = !rightDrawer"  
@@ -59,11 +65,10 @@
       </v-btn> -->
     </v-toolbar>
     <v-content>
-
+      
       <v-container>
         <nuxt />
       </v-container>
-      
     </v-content>
     <!-- <v-navigation-drawer
       :right="right"
@@ -84,8 +89,13 @@
       :fixed="fixed"
       app
     >
+    <v-flex
+      text-xs-center
+    > 
       <span>&copy; 2019</span>
+      </v-flex>
     </v-footer>
+    
   </v-app>
 </template>
 
@@ -98,7 +108,8 @@
         fixed: false,
         items: [
           { icon: 'home', title: 'HOME', to: '/' },
-          { icon: 'apps', title: 'MAPS', to: '/map' }
+          { icon: 'place', title: 'MAPS', to: '/map' },
+          { icon: 'list', title: 'SHOP LIST', to: '/list' },
         ],
         miniVariant: false,
         right: true,
