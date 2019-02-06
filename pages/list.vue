@@ -13,6 +13,25 @@
               <div slot='text'>{{data.text}}
                 </div>
                 
+                <div slot='owner_url'>   
+                   <v-btn large icon :href="data.owner_url" target="_blank"
+                   v-bind:disabled='isNull'>
+                     <i class="fas fa-home fa-2x"></i>
+                     </v-btn>
+                     </div>
+
+                     <div slot='instagram'>                    
+                   <v-btn large icon :href="data.instagram" target="_blank"> 
+                     <i class="fab fa-instagram fa-2x"></i>
+                     </v-btn>
+                     </div>
+
+                     <div slot='facebook'>                    
+                   <v-btn large icon :href="data.facebook" target="_blank">
+                     <i class="fab fa-facebook-square fa-2x"></i>
+                     </v-btn>
+                  </div>
+
                 </card>
 
           </v-flex>
@@ -31,11 +50,23 @@ export default {
   data(){
   return{
       myjson:json,
+      isNull:false
+
+    }
+  },
+  methods:{
+    ISNULL(){
+    if(this.href==null)
+    this.isNull=true
+    else{
+      this.isNull=false
+    }
     }
   },
 
  components:{
-   'card':Card
+   'card':Card,
+
  }
 
 };

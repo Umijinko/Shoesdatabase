@@ -29,12 +29,18 @@
       :clipped-right="clipped"
       app
     >
-    <v-flex
-    text-xs4-center>
+    
+    <v-flex text-xs4-center>
 
     <v-toolbar-title fixed v-text="title"/>
-
-    </v-flex>
+      
+      </v-flex>
+          <v-text-field
+      
+        flat
+        label="Search"
+        prepend-inner-icon="search"
+      ></v-text-field>
     
     <v-spacer></v-spacer>
       <v-toolbar-side-icon @click="drawer = !drawer" />

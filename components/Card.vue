@@ -20,22 +20,28 @@
               <v-divider light></v-divider>
 
               <v-card-actions>
-
-                <v-btn justify-center icon @click="show = !show">
+                <v-flex text-xs-center>
+                <v-btn icon @click="show = !show">
                   <v-icon>{{ show ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</v-icon>
                 </v-btn>
-
+                </v-flex>
               </v-card-actions>
 
               <v-slide-y-transition>
                 <v-card-text v-show="show">
-                  <v-flex text-xs-center>
-                    <router-link to="/">
-                      <v-btn class="mx-0" color="primary" large>
-                        <v-icon fab>link</v-icon>
-                      </v-btn>
-                    </router-link>
+                  
+                  <v-flex xs12>
+                  <v-layout align-center justify-end fill-height>
+                    
+                    <slot name='owner_url'></slot>
+
+                    <slot name='instagram'></slot>
+
+                    <slot name='facebook'></slot>
+
+                  </v-layout>
                   </v-flex>
+
                 </v-card-text>
               </v-slide-y-transition>
 
@@ -45,12 +51,15 @@
 
 <script>
 
+
+
 export default {
   name:'card',
   data(){
   return{
-      show:false
-    }
+      show:false,
+
+  }
   }
 }
 
