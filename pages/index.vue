@@ -34,10 +34,10 @@ export default {
     return {
       items: [
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg"
+          src:"https://user-images.githubusercontent.com/42897791/52334973-8c35f580-2a44-11e9-8978-2126229e223a.JPG" 
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg"
+          src: "https://user-images.githubusercontent.com/42897791/52343703-2f463980-2a5c-11e9-9ff6-6d30616d2435.jpg"
         },
         {
           src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg"
