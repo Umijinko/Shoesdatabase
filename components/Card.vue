@@ -34,15 +34,17 @@
           <v-layout align-center justify-end fill-height>
 
               <v-btn fab large icon :href="items.owner_url" target="_blank" 
-              :disabled='isnull'>
+              :disabled='showbtn'>
                 <i class="fas fa-home fa-2x"></i>
               </v-btn>
    
-              <v-btn fab large icon :href="items.instagram" target="_blank">
+              <v-btn fab large icon :href="items.instagram" target="_blank"
+              :disabled='showbtn2'>
                 <i class="fab fa-instagram fa-2x"></i>
               </v-btn>
 
-              <v-btn fab large icon :href="items.facebook" target="_blank">
+              <v-btn fab large icon :href="items.facebook" target="_blank"
+              :disabled='showbtn3'>
                 <i class="fab fa-facebook-square fa-2x"></i>
               </v-btn>
 
@@ -63,17 +65,43 @@ export default {
     return {
       show: false,
       data:this.items,
+      showbtn:false,
+      showbtn2:false,
+      showbtn3:false
     }
   },
+  mounted(){
+    this.Isnull()
+    this.Isnull2()
+    this.Isnull3()
+  },
+
   methods:{
-    isnull(){
-      if(items.owner_url==""){
-      return true
+    Isnull(){
+      if(this.items.owner_url==""){
+      this.showbtn = true
+      }else{
+        this.showbtn= false
+        }
+    },
+    Isnull2(){
+      if(this.items.instagram==""){
+      this.showbtn2 = true
       }
       else{
-      return false
+        this.showbtn2= false
       }
+    },
+
+    Isnull3(){
+      if(this.items.facebook==""){
+      this.showbtn3 = true
       }
+      else{ 
+        this.showbtn3=false
+        }
+      }
+
       }
 
 };
