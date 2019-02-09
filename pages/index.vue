@@ -2,15 +2,18 @@
   <v-responsive>
     <v-container fill-height>
       <v-layout align-center>
-        <v-flex>
-          <h3 class="display-3">Welcome to the site</h3>
+        <v-flex justify-center>
+          <h3 class="my-5 text-xs-center font-weight-black display-3">Welcome <br>to the site</h3>
+          
 
-          <v-carousel>
+          <v-responsive :aspect-ratio="16/9">
+          <v-carousel ma-5 :aspect-ratio="16/9">
             <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src"></v-carousel-item>
           </v-carousel>
+          </v-responsive>
 
-          <v-flex px-2 py-2>
-            <span class="subheading">シューズデータベースは世界の靴屋の情報を届けます
+          <v-flex px-2 py-2 text-xs-center>
+            <span class="my-10 subheading font-weight-thin">シューズデータベースは世界の靴屋の情報を届けます
               <v-spacer></v-spacer>Shoesdatabase delivers information on shoes in the world to you.
             </span>
           </v-flex>
@@ -19,7 +22,7 @@
 
           <v-flex text-xs-center>
             <router-link to="/list">
-              <v-btn class="mx-0" color="primary" large>View shop list</v-btn>
+              <v-btn outline round class="mx-0" color="primary" large>View shop list</v-btn>
             </router-link>
           </v-flex>
         </v-flex>

@@ -4,10 +4,10 @@
       <v-layout row wrap>
 
         <v-flex xs12 v-for="data in myjson" 
-        :key="data.id" 
-        :items="data">
+        :key="data.id">
 
-          <card/>
+          <card :items="data">
+            </card>
 
         </v-flex>
       </v-layout>
@@ -20,7 +20,6 @@ import json from "../assets/data.json";
 import Card from "../components/Card.vue";
 
 export default {
-  name: "All",
   data() {
     return {
       myjson:json,

@@ -5,7 +5,7 @@
         <v-card-title primary-title>
           
             <div class="headline">
-          {{data}}
+          {{items.title}}
           </div>
 
         </v-card-title>
@@ -32,24 +32,20 @@
       <v-card-text v-show="show">
         <v-flex xs12>
           <v-layout align-center justify-end fill-height>
-<!-- 
-            <div slot="owner_url">
-              <v-btn large icon :href="data.owner_url" target="_blank" v-bind:disabled="isNull">
+
+              <v-btn fab large icon :href="items.owner_url" target="_blank" 
+              :disabled='isnull'>
                 <i class="fas fa-home fa-2x"></i>
               </v-btn>
-            </div>
-
-            <div slot="instagram">
-              <v-btn large icon :href="data.instagram" target="_blank">
+   
+              <v-btn fab large icon :href="items.instagram" target="_blank">
                 <i class="fab fa-instagram fa-2x"></i>
               </v-btn>
-            </div>
 
-            <div slot="facebook">
-              <v-btn large icon :href="data.facebook" target="_blank">
+              <v-btn fab large icon :href="items.facebook" target="_blank">
                 <i class="fab fa-facebook-square fa-2x"></i>
               </v-btn>
-            </div> -->
+
 
           </v-layout>
         </v-flex>
@@ -66,8 +62,19 @@ export default {
   data() {
     return {
       show: false,
-      data:this.items
-    };
-  }
+      data:this.items,
+    }
+  },
+  methods:{
+    isnull(){
+      if(items.owner_url==""){
+      return true
+      }
+      else{
+      return false
+      }
+      }
+      }
+
 };
 </script>
