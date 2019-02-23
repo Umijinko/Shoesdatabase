@@ -1,1 +1,6 @@
-{}
+{
+  "projects": {
+    "default": "shoesdatabase",
+    "shoesdatabase": "shoesdatabase-v1"
+  }
+}

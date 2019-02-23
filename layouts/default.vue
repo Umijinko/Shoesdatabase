@@ -6,9 +6,10 @@
       v-model="drawer"
       fixed
       app
+      right
     >
       <v-list>
-        <v-list-tile
+        <v-list-tile 
           v-for="(item, i) in items"
           :to="item.to"
           :key="i"
@@ -19,7 +20,7 @@
             <v-icon v-html="item.icon" />
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title v-text="item.title" />
+            <v-list-tile-title class="font-weight-thin" v-text="item.title" />
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
@@ -32,7 +33,7 @@
     
     <v-flex text-xs4-center>
 
-    <v-toolbar-title fixed v-text="title"/>
+    <v-toolbar-title class="font-weight-thin" fixed v-text="title"/>
       
       </v-flex>
           <!-- <v-text-field
@@ -67,8 +68,11 @@
   </v-app>
 </template>
 
+
 <script>
-  export default {
+
+
+export default {
     data() {
       return {
         clipped: false,
@@ -76,7 +80,7 @@
         fixed: false,
         items: [
           { icon: 'home', title: 'HOME', to: '/' },
-          { icon: 'place', title: 'MAPS', to: '/map' },
+          // { icon: 'place', title: 'MAPS', to: '/map' },
           { icon: 'list', title: 'SHOP LIST', to: '/list' },
         ],
         miniVariant: false,
