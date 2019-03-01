@@ -3,8 +3,10 @@
     <v-container fluid grid-list-lg>
       <v-layout row wrap>
         
-        <searchdialog/>
-    
+        <v-btn fab color="primary" fixed right bottom to="/dialog">
+      <v-icon>search</v-icon>
+      </v-btn>
+
         <v-flex xs12 v-for="data in myjson" 
         :key="data.id">
 
@@ -21,21 +23,17 @@
 import json from "../assets/data.json";
 import Card from "../components/Card.vue";
 
-import Dialog from "../components/dialog.vue"
 
 export default {
   data() {
     return {
       myjson:json,
-
-      preview:[],
-      tagslist:["#wide","#Narrow"]
     };
   },
 
   components: {
     card: Card,
-    searchdialog : Dialog
-  }
+  },
+  
 };
 </script>

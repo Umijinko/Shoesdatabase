@@ -1,5 +1,5 @@
 [
-{"id": 1, "title": "RENDO", "country_codes":"81", "photo_file_url": "./shopimages/Shop1.jpg", "lat": 35.71724, "lng": 139.80199,  "height": 400, "instagram":"https://www.instagram.com/rendoasakusa/", "facebook":"https://ja-jp.facebook.com/rendoshoes/",  "owner_url": "https://www.rendo-shoes.jp/","tag":"#Dress,#Narrow,#Wide"}
+{"id": 1, "title": "RENDO", "country_codes":"81", "photo_file_url": "./shopimages/Shop1.jpg", "lat": 35.71724, "lng": 139.80199,  "height": 400, "instagram":"https://www.instagram.com/rendoasakusa/", "facebook":"https://ja-jp.facebook.com/rendoshoes/",  "owner_url": "https://www.rendo-shoes.jp/",  "tags":[{"tag":"Dress"},{"tag":"Narrow"}]}
 ,
 {"id": 2, "title": "Joe Works", "country_codes":"81", "photo_file_url": "./shopimages/Shop2.jpg", "lat": 35.72688,  "lng": 139.80452, "height": 389, "instagram":"", "facebook":"",  "owner_url": "https://www.joeworks.net/"}
 ,

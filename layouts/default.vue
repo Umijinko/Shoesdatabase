@@ -54,7 +54,7 @@
       </v-container>
     </v-content>
 
-    <v-footer
+    <!-- <v-footer
       :fixed="fixed"
       app
     >
@@ -63,7 +63,7 @@
     > 
       <span>&copy; 2019</span>
       </v-flex>
-    </v-footer>
+    </v-footer> -->
     
   </v-app>
 </template>
