@@ -1,7 +1,7 @@
 const pkg = require('./package')
 
 module.exports = {
-  mode: 'universal',
+  mode: 'spa',
 
   /*
   ** Headers of the page
@@ -37,17 +37,17 @@ module.exports = {
   */
   plugins: [
     '@/plugins/vuetify',
-  // { src: "~/plugins/vue2-google-maps", ssr: false }
+  { src: "~/plugins/vue2-google-maps", ssr: false }
   ],
-    // build: {
-    //   transpile: [/^vue2-google-maps($|\/)/]
-    // },
+    build: {
+      transpile: [/^vue2-google-maps($|\/)/]
+    },
 
   /*
   ** Nuxt.js modules
   */
   modules: [
-    // '@nuxtjs/pwa'
+    '@nuxtjs/pwa'
   ],
 
   /*

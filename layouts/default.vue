@@ -80,7 +80,7 @@ export default {
         fixed: false,
         items: [
           { icon: 'home', title: 'HOME', to: '/' },
-          // { icon: 'place', title: 'MAPS', to: '/map' },
+          { icon: 'place', title: 'MAPS', to: '/map' },
           { icon: 'list', title: 'SHOP LIST', to: '/list' },
         ],
         miniVariant: false,
