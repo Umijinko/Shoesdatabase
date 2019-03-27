@@ -1,5 +1,6 @@
 <template>
-<div>
+<div class='app'>
+  <div id='maps'>
 <GmapMap
   :options="{
    zoomControl: true,
@@ -13,7 +14,7 @@
       :center="{lat:35.71724, lng:139.80199}"
       :zoom="7"
       map-type-id="roadmap"
-      style="width: mapWidth; height: 600px;"
+      style="width: 100%; height: 90vh; will-change: transform; transform: translateZ(0);"
       
 >
                 <!-- <gmap-info-window
@@ -33,7 +34,7 @@
   />
   
 </GmapMap>
-
+</div>
 </div>
 </template>
 
@@ -63,3 +64,13 @@ import Items from '~/assets/data.json'
 }
 
 </script>
+
+<style>
+.maps{
+  padding:0;
+}
+
+.app{
+padding :0;  
+}
+</style>

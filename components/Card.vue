@@ -61,6 +61,8 @@ export default {
   props: ["items"],
 
   name: "card",
+
+  
   data() {
     return {
       show: false,
@@ -110,3 +112,12 @@ export default {
   }
 };
 </script>
+
+<style>
+.page-enter-active, .page-leave-active {
+  transition: opacity .3s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
+</style>

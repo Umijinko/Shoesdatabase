@@ -3,7 +3,8 @@
     <v-container fluid grid-list-lg>
       <v-layout row wrap>
         
-        <v-btn fab color="primary" fixed right bottom>
+        <v-btn fab color="primary" fixed right bottom
+        @click=filters>
       <v-icon>search</v-icon>
       </v-btn>
 
@@ -32,10 +33,13 @@ export default {
   },
   components: {
     card: Card,
+    result:[]
   },
-  method(){
-   
-  }
+  // methods(){
+  //   filtereddata = myjson.filter(function(item,index){
+  //    if(item.id == '1') return true;
+  //  })
+  // }
 
 };
 </script>
