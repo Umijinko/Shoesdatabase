@@ -1,11 +1,11 @@
 [
 {"id": 1, "title": "RENDO", "country_codes":"81", "photo_file_url": "./shopimages/Shop1.jpg", "lat": 35.71724, "lng": 139.80199,  "height": 400, "instagram":"https://www.instagram.com/rendoasakusa/", "facebook":"https://ja-jp.facebook.com/rendoshoes/",  "owner_url": "https://www.rendo-shoes.jp/",  "tags":["test1","test2"]}
 ,
-{"id": 2, "title": "Joe Works", "country_codes":"81", "photo_file_url": "./shopimages/Shop2.jpg", "lat": 35.72688,  "lng": 139.80452, "height": 389, "instagram":"", "facebook":"",  "owner_url": "https://www.joeworks.net/"}
+{"id": 2, "title": "Joe Works", "country_codes":"81", "photo_file_url": "./shopimages/Shop2.jpg", "lat": 35.72688,  "lng": 139.80452, "height": 389, "instagram":"", "facebook":"",  "owner_url": "https://www.joeworks.net/",  "tags":["test1","test3"]}
 ,
-{"id": 3, "title": "KOKON", "country_codes":"81", "photo_file_url": "./shopimages/Shop3.jpg", "lat": 36.55566,  "lng": 136.65605, "height": 382, "instagram":"", "facebook":"",  "owner_url": "http://kanazawakokon.com/"}
+{"id": 3, "title": "KOKON", "country_codes":"81", "photo_file_url": "./shopimages/Shop3.jpg", "lat": 36.55566,  "lng": 136.65605, "height": 382, "instagram":"", "facebook":"",  "owner_url": "http://kanazawakokon.com/","tags":["test2","test3"]}
 ,
-{"id": 4, "title": "Avanti", "country_codes":"81", "photo_file_url": "./shopimages/Shop4.jpg", "lat": 35.17623,  "lng": 136.90717, "instagram":"", "facebook":"",  "owner_url": "http://avanti-shoes.net/"}
+{"id": 4, "title": "Avanti", "country_codes":"81", "photo_file_url": "./shopimages/Shop4.jpg", "lat": 35.17623,  "lng": 136.90717, "instagram":"", "facebook":"",  "owner_url": "http://avanti-shoes.net/","tags":["test1","test3"]}
 ,
 {"id": 5, "title": "Gloucester Road Shoes Shop", "country_codes":"81", "photo_file_url": "./shopimages/Shop5.jpg", "lat": 35.43852,  "lng": 139.64498, "instagram":"", "facebook":"",  "owner_url": "http://www.gloucester-road.com/"}
 ,
