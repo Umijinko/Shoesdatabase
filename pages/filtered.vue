@@ -9,12 +9,12 @@
       <v-icon>search</v-icon>
       </v-btn>
 
-             <!-- <v-flex xs12 v-for="data in hoge" 
+             <v-flex xs12 v-for="data in shoplist" 
         :key="data.id">
 
           <card :items="data">
             </card>
-        </v-flex> -->
+        </v-flex>
 
       </v-layout>
     </v-container>
@@ -31,7 +31,7 @@ export default {
     return {
       myjson:json,
       result:[],
-      hoge:[]
+      shoplist:[]
     };
   },
   components: {
@@ -41,20 +41,12 @@ export default {
     methods:{
       
       filters(){
-        //const test = this.myjson.filter(result => for (x of this.result.tags) if (x==='test1') )//result.tag =["test1","test2"]
-        // const test = this.myjson.filter(result => result.tags)//result.tag =["test1","test2"]
-        //const test = this.myjson.filter(result => result.tags in "test1")
-        //const test = this.myjson.filter(result => result.tags.filter(x => x==="test1"))
-        //const test = this.myjson.filter(result => result.tags in "test1")
-        //const text = result.tags
-        //const test = this.myjson.filter(result => result.tags)
-        //const test = this.myjson.filter(result => result.tags)
-        //const test = this.myjson.filter(result => if("test1" in result.tags)return result.tag;);
-        let hoge = this.myjson.filter(result => result.tags)
-        for(let x in hoge){
-          //console.log(hoge[x].tags)
+        
+        this.shoplist = this.myjson.filter(result => result.tags)
+        for(let x in this.shoplist){
+          //console.log(shoplist[x].tags)
           let lists=[]
-          for(let i of hoge[x].tags){
+          for(let i of this.shoplist[x].tags){
             //console.log(i)
             if(i === "test1"){
               lists.push(true)
@@ -66,15 +58,11 @@ export default {
           if(!lists.includes(true)){
             //console.log("ない")
             //test[x]=""
-            hoge.splice(x,1)
+            this.shoplist.splice(x,1)
           }
         }
-
-        
-        console.log(hoge)
-        //console.log(this.myjson)
     }
-    } 
+  } 
   
 };
 </script>
