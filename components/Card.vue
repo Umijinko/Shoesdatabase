@@ -6,13 +6,12 @@
           
           <div class="headline">{{items.title}}</div>
 
-          <v-flex row wrap>
+          <!-- <v-flex row wrap>
           <div class="subheading">
-            <i class="fas fa-map-marker-alt"></i>
-            {{CountryId}}
-            {{items.tag}}
-          </div>
-          </v-flex>
+            <i class="fas fa-map-marker-alt"></i> -->
+            <!-- {{CountryId}} -->
+          <!-- </div>
+          </v-flex> -->
 
         </v-card-title>
       </v-flex>
@@ -71,7 +70,7 @@ export default {
       showbtn2: false,
       showbtn3: false,
 
-      CountryId:"None"
+      // CountryId:"None"
     };
   },
   mounted() {
@@ -79,7 +78,7 @@ export default {
     this.Isnull2();
     this.Isnull3();
     
-    this.country();
+    // this.country();
   },
 
   methods: {
@@ -106,9 +105,10 @@ export default {
       }
     },
 
-    country(){
-      if(this.country_codes = '/^81/')
-      this.CountryId="Japan"}
+  //   country(){
+  //     if(this.country_codes = '/^81/')
+  //     this.CountryId="Japan"}
+  // }
   }
 };
 </script>

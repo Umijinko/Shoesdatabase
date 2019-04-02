@@ -31,20 +31,20 @@ export default {
 
   methods: {
     filters() {
-      this.resultlist = this.myjson.filter(result => result.tags);
-      for (let index in this.resultlist) {
-        let lists = [];
-        for (let iftags of this.resultlist[index].tags) {
-          if (iftags === "test1") {
-            lists.push(true);
-          } else {
-            lists.push(false);
-          }
-          if (!lists.includes(true)) {
-            this.resultlist.splice(index, 1);
-          }
-        }
-      }
+      // this.resultlist = this.myjson.filter(result => result.tags)
+      // for (let index in this.resultlist) {
+      //   let lists = [];
+      //   for (let iftags of this.resultlist[index].tags) {
+      //     if (iftags === "test1") {
+      //       lists.push(true);
+      //     } else {
+      //       lists.push(false);
+      //     }
+      //     if (!lists.includes(true)) {
+      //       this.resultlist.splice(index, 1);
+      //     }
+      //   }
+      // }
     }
   }
 };

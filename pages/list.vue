@@ -1,24 +1,21 @@
   <template>
-  <div id="e3" style="max-width: 1000px; margin: auto;">
+  <div>
     <v-container fluid grid-list-lg>
-      <v-layout row wrap>
+      <v-layout justify-center  wrap>
 
-        <!-- <v-btn fab color="primary" fixed right bottom>
-      <v-icon>search</v-icon>
-        </v-btn>-->
-
-        <v-layout row text-xs-center>
-          <v-flex xs12>
-            <v-btn large flat outline color="primary" @click="filters">Casual</v-btn>
-            <v-btn large flat outline color="primary">Dress</v-btn>
-            <v-btn large flat outline color="primary">All</v-btn>
+          <v-flex xs12 text-xs-center>
+            <v-btn large flat outline color="primary" @click="CasualFilter">Casual</v-btn>
+            <v-btn large flat outline color="primary" @click="DressFilter">Dress</v-btn>
+            <v-btn large flat outline color="info" @click="NoFilter">All</v-btn>
           </v-flex>
-        </v-layout>
-
+      
+        <transition-group name="fade">
         <v-flex xs12 v-for="data in resultlist" :key="data.id">
           <card :items="data"></card>
         </v-flex>
-      </v-layout>
+        </transition-group>
+        </v-layout>
+
     </v-container>
   </div>
 </template>
@@ -38,25 +35,30 @@ export default {
   components: {
     card: Card
   },
-
-    methods: {
-    filters() {
-      let lists = [];
-      this.resultlist = this.myjson.filter(result => result.tags)
-      for (let index in this.resultlist) {
-        for (let iftags of this.resultlist[index].tags) {
-          if (iftags === "casual") {
-            lists.push(true);
-            console.log(lists[index])
-          } else {
-            lists.push(false);
-          }
-          // if (!lists.includes(true)) {
-          //   this.resultlist.splice(index,0);
-          // }
-        }
-      }
+  created(){
+    this.resultlist = this.myjson
+  },
+    methods:{
+    CasualFilter() {
+      this.resultlist = this.myjson.filter(result => result.casual===true)
+    },
+    DressFilter(){
+      this.resultlist = this.myjson.filter(result => result.dress===true)
+    },
+    NoFilter(){
+      this.resultlist= this.myjson
     }
   }
 };
 </script>
+
+<style lang="scss">
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .7s
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
+
+</style>
