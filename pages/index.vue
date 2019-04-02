@@ -9,13 +9,13 @@
 
     <v-layout text-xs-center>
       <v-flex xs12>
-        <v-btn large color="info" to="/list" >Shop list</v-btn>
+        <v-btn large color="info" to="/list" block >Shop list</v-btn>
       </v-flex>
     </v-layout>
 
     <v-layout text-xs-center>
       <v-flex xs12> 
-        <v-btn large color="primary" to="/map" flat outline>Maps</v-btn>
+        <v-btn large color="primary" to="/map" flat outline block>Maps</v-btn>
       </v-flex>
     </v-layout>
 
